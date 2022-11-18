@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .glass{
+            background: url('./images/home/glass.svg');
+            margin-left: -20px;
+            margin-top: -20px;
+        }
+        .herobanner{
+            width: 100%;
+            height: auto;  
+            margin-top: 100px;  
+            margin-left: 50px;
+        }
+        .content{
+            margin-top: -80px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #0099ff;
+        }
+        .button{
+                margin-left: 90px;
+                margin-top:200px;
+                width: 400px;
+                height: 400px;
+                text-align: center;
+                border: 1px solid #0099ff;
+                border-radius: 5%;
+                background-color: #0099ff;
+        }
+        .call{
+            font-size: 21px;
+            font-weight: 600;
+            padding: 10px;
+            margin: 30px;
+            width: 120px;
+            border-radius: 29px;
+            color: #0099ff;
+            background-color: white;
+            border: none;  
+        }
+        .call:hover{
+            color: white;
+            background-color: #0099ff;
+            box-shadow: 2px 2px 3px black;
+        }
+        .whatsapp{
+            font-size: 21px;
+            font-weight: 600;
+            padding: 10px;
+            margin: 30px;
+            width: 200px;
+            border-radius: 29px;
+            color: #0099ff;
+            background-color: white;
+            border: none;
+        }
+        .whatsapp:hover{
+            color: white;
+            background-color: #0099ff;
+            box-shadow: 2px 2px 2px rgb(40, 40, 40);
+        }
+        .request{
+            font-size: 21px;
+            font-weight: 600;
+            padding: 10px;
+            margin: 30px;
+            width: 300px;
+            border-radius: 29px;
+            color: #0099ff;
+            background-color: white;
+            border: none;
+        }
+        .request:hover{
+            color: white;
+            background-color: #0099ff;
+            box-shadow: 2px 2px 2px rgb(40, 40, 40);
+        }
+
+        /* box-1 */
+        .background{
+            background: url('./images/home/background.svg');
+            background-size:cover; 
+            padding: 50px;
+        }
+        .about h1{
+            color: #0099ff;
+            font-weight: 700;
+            padding-bottom: 30px;
+            margin-left: 70px;
+        }
+        .about span{
+            color: #83BA43;
+        }
+        .about p{
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 50px;
+            margin-left: 70px;
+        }
+        .about button{
+            background: transparent; 
+            color: black; 
+            border: 3px solid #0099ff;
+            padding: 6px 27px;
+            border-radius: 21px;
+            font-size: 21px;
+            font-weight: 600;
+            color: #0099ff;
+            margin-left: 70px;
+            }
+
+            button:hover {
+            background-color: #0099ff;
+            color:white;
+            }
+        .img1{
+            width: 100%;
+            height: auto;
+        }   
+
+            /* box-2 */
+        .we-do h1{
+            color: #0099ff;
+            font-weight: 700;
+            text-align: center;
+            margin: 50px 0;
+        }
+        .we-do h3{
+            color: #0099ff;
+            font-weight: 700;
+            margin: 30px 0;
+        }
+        .we-do p{
+            color: #414141;
+            font-weight: 600;
+        }
+        /* box-3 */
+        .background-1{
+            width: 100%;
+        }
+        .logo{
+            margin-top: -1050px;
+        }
+        .head{
+            color: #0099ff;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 80px;
+        }
+        .logo-1{
+            margin-bottom: 50px;
+            margin-left: 70px;
+        }
+        .logo-2{
+            margin-left: 200px;
+        }
+         .a1{
+            color:#5F8CE5;
+            text-decoration: none;
+            font-size: 36px;
+            font-weight: 600;
+            margin-left: 60px;
+        }
+        .a2{
+            color: #474F59;
+            text-decoration: none;
+            font-size: 36px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        .a3{
+            color: #96A9BD;
+            text-decoration: none;
+            font-size: 36px;
+            font-weight: 600;
+            margin-left: 20px;
+        }
+        .a4{
+            color: #2ECD9C;
+            text-decoration: none;
+            font-size: 36px;
+            font-weight: 600;
+            margin-left: 20px;
+        }
+        .a5{
+            color: #F18F3B;
+            text-decoration: none;
+            font-size: 36px;
+            font-weight: 600;
+            margin-left: 0px;
+        }
+
+    @media screen and (max-width:768px) {
+        .herobanner{
+            margin-left: 0;
+            margin-top: 0;
+            display: none;
+        }
+        .button{
+            margin:auto;
+        }
+        .logo-1{
+            margin-left: 200px;
+            width: 100%;
+            height: auto;
+        }
+        .logo-2{
+            margin-left: 0;
+        }
+    }    
+    </style>
+</head>
+<body>
+    <!-- box -->
+<div class="glass">
+    <div class="container home">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 ">
+                <img class="herobanner" src="./images/home/herobanner.svg">
+            </div>
+            <div class="col-sm-12 col-md-6 button">
+                <div class="row">
+                    <div class="col-sm-12 content">
+                        Tailored IT Outsourcing Services 
+                        to maximize your business potential
+                    </div>
+                </div>
+                <button class="call"><img src="./images/home/call.svg">Call</button>
+                <button class="whatsapp"><img src="./images/home/whatsapp.svg">WhatsApp</button>
+                <button class="request"><img src="./images/home/callback.svg">Request a Call Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- box-1 -->
+    <div class="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 about">
+                <h1>About Tru<span>Point</span></h1>
+                <p>
+                    TruPoint is a full-service IT service provider – a one-
+                    stop-shop for all your design, development and IT
+                    outsourcing needs.<br><br>
+    
+                    We serve micro, small and medium sized businesses,
+                    delivering smart end-to-end digital solutions to
+                    clients in India, USA and Canada. </p>
+                <button>Learn More</button>
+            </div>
+            <div class="col-sm-6">
+                <img class="img1" src="./images/home/about.svg">
+            </div>
+        </div>
+    </div>
+    </div>
+      <!-- box-2   -->
+    <div class="container we-do">
+        <div class="row">
+            <div class="col-12 "><h1>What We Do</h1></div>
+            <div class="col-sm-4 text-center">
+                <img src="./images/home/focus.svg">
+                <h3>Stay focused</h3>
+                <p>TruPoint takes the hassle
+                    out of IT and development,
+                    leaving you to focus on
+                    what matters the most
+                    - running your business.</p>
+            </div>
+    
+            <div class="col-sm-4 text-center">
+                <img src="./images/home/best.svg">
+                <h3>Best-in-class</h3>
+                <p>From designing the
+                    perfect logo, developing
+                    innovative websites or mobile
+                    applications, or any other
+                    IT outsourcing service you
+                    can think of, we've
+                    got you covered!</p>
+            </div>
+    
+            <div class="col-sm-4 text-center">
+                <img src="./images/home/side.svg">
+                <h3>By your side</h3>
+                <p>Committed to help you grow,
+                    we create tailored solutions
+                    that save time, money,
+                    reduce workload, and boost
+                    productivity, allowing you to
+                    stay ahead of your competition.</p>
+            </div>
+        </div>
+    </div>
+    <!-- box-3 -->
+    <div >
+        <img class="background-1" src="./images/home/background1.svg" >
+    <div class="container logo">
+        <div class="row logo-1">
+            <h1 class="head">How we can help you</h1>
+            <div class="col-md-4">
+                <img class="logo1" src="./images/home/design.svg"> <br>
+                <a class="a1" href="#">Design</a>
+            </div>
+    
+            <div class="col-md-4">
+                <img class="logo2" src="./images/home/cloud.svg"> <br>
+                <a class="a2" href="#">Cloud Service</a>
+            </div>
+    
+            <div class="col-md-4">
+                <img class="logo3" src="./images/home/outsourc.svg"> <br>
+                <a class="a3" href="#">Outsourcing</a>
+            </div>
+        </div>
+    
+        <div class="row logo-2">
+            <div class="col-sm-6">
+                <img class="logo4" src="./images/home/develop.svg"> <br>
+                <a class="a4" href="#">Developmant</a>
+            </div>
+    
+            <div class="col-sm-6">
+                <img class="logo5" src="./images/home/market.svg"> <br>
+                <a class="a5" href="#">Digital Marketing</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
